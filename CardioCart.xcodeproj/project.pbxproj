@@ -16,6 +16,8 @@
 		8E7879B42A79C5F100F6F8F0 /* UserProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879B32A79C5F100F6F8F0 /* UserProgress.swift */; };
 		8E7879B62A79C62B00F6F8F0 /* Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879B52A79C62B00F6F8F0 /* Progress.swift */; };
 		8E7879BA2A79C7A800F6F8F0 /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879B92A79C7A800F6F8F0 /* Stub.swift */; };
+		8E7879BC2A79CC3700F6F8F0 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E7879BB2A79CC3700F6F8F0 /* user.json */; };
+		8E7879BE2A79CCB500F6F8F0 /* userProgress.json in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879BD2A79CCB500F6F8F0 /* userProgress.json */; };
 		8EB3019C2A78625C005E2620 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3019B2A78625C005E2620 /* AppDelegate.swift */; };
 		8EB3019E2A78625C005E2620 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3019D2A78625C005E2620 /* SceneDelegate.swift */; };
 		8EB301A02A78625C005E2620 /* LeaderBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3019F2A78625C005E2620 /* LeaderBoardViewController.swift */; };
@@ -53,6 +55,8 @@
 		8E7879B32A79C5F100F6F8F0 /* UserProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProgress.swift; sourceTree = "<group>"; };
 		8E7879B52A79C62B00F6F8F0 /* Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress.swift; sourceTree = "<group>"; };
 		8E7879B92A79C7A800F6F8F0 /* Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stub.swift; sourceTree = "<group>"; };
+		8E7879BB2A79CC3700F6F8F0 /* user.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
+		8E7879BD2A79CCB500F6F8F0 /* userProgress.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userProgress.json; sourceTree = "<group>"; };
 		8EB301982A78625C005E2620 /* CardioCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardioCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB3019B2A78625C005E2620 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EB3019D2A78625C005E2620 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				8E7879B92A79C7A800F6F8F0 /* Stub.swift */,
+				8E7879BB2A79CC3700F6F8F0 /* user.json */,
+				8E7879BD2A79CCB500F6F8F0 /* userProgress.json */,
 			);
 			path = Stubs;
 			sourceTree = "<group>";
@@ -295,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E7879BC2A79CC3700F6F8F0 /* user.json in Resources */,
 				8EB301A82A78625C005E2620 /* LaunchScreen.storyboard in Resources */,
 				8EB301A52A78625C005E2620 /* Assets.xcassets in Resources */,
 			);
@@ -331,6 +338,7 @@
 				8E7879BA2A79C7A800F6F8F0 /* Stub.swift in Sources */,
 				8E7879B02A79C11C00F6F8F0 /* MockUserProvider.swift in Sources */,
 				8E7879A92A79BFC600F6F8F0 /* UserProviderProtocol.swift in Sources */,
+				8E7879BE2A79CCB500F6F8F0 /* userProgress.json in Sources */,
 				8E7879AE2A79C06500F6F8F0 /* User.swift in Sources */,
 				8E7879B42A79C5F100F6F8F0 /* UserProgress.swift in Sources */,
 			);

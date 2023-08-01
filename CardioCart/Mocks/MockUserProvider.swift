@@ -11,13 +11,26 @@ internal final class MockUserProvider: UserProvider {
 
     private lazy var testUser: User? = {
         do {
-            let user: User? = try Stub.user.load()
+            let user: User = try Stub.user.load()
             return user
         } catch let error as StubError {
             print("StubError: \(error)")
             return nil
-        } catch {
-            print("Unknown test user error")
+        } catch let error {
+            print("Test user load error: \(error)")
+            return nil
+        }
+    }()
+
+    private lazy var testUserProgress: UserProgress? = {
+        do {
+            let userProgress: UserProgress = try Stub.userProgress.load()
+            return userProgress
+        } catch let error as StubError {
+            print("StubError: \(error)")
+            return nil
+        } catch let error {
+            print("Test userProgress load error: \(error)")
             return nil
         }
     }()

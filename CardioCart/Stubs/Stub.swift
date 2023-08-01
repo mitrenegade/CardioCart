@@ -13,14 +13,14 @@ internal enum StubError: Error {
 
 internal enum Stub: String {
     case user
-    case progress
+    case userProgress
 
     private var filename: String {
         switch self {
         case .user:
             return "user"
-        case .progress:
-            return "progress"
+        case .userProgress:
+            return "userProgress"
         }
     }
 
