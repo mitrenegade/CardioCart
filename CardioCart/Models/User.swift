@@ -7,7 +7,7 @@
 
 import Foundation
 
-internal struct User {
+internal struct User: Codable {
     let id: UUID
     let name: String
 }
