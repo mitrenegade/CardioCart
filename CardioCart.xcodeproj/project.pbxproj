@@ -9,9 +9,13 @@
 /* Begin PBXBuildFile section */
 		8E7879A42A79B85E00F6F8F0 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879A32A79B85E00F6F8F0 /* MainCoordinator.swift */; };
 		8E7879A62A79B9F200F6F8F0 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879A52A79B9F200F6F8F0 /* CoordinatorProtocol.swift */; };
+		8E7879A92A79BFC600F6F8F0 /* UserProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879A82A79BFC600F6F8F0 /* UserProviderProtocol.swift */; };
+		8E7879AE2A79C06500F6F8F0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879AD2A79C06500F6F8F0 /* User.swift */; };
+		8E7879B02A79C11C00F6F8F0 /* MockUserProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879AF2A79C11C00F6F8F0 /* MockUserProvider.swift */; };
+		8E7879B22A79C1A300F6F8F0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879B12A79C1A300F6F8F0 /* LoginViewController.swift */; };
 		8EB3019C2A78625C005E2620 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3019B2A78625C005E2620 /* AppDelegate.swift */; };
 		8EB3019E2A78625C005E2620 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3019D2A78625C005E2620 /* SceneDelegate.swift */; };
-		8EB301A02A78625C005E2620 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3019F2A78625C005E2620 /* ViewController.swift */; };
+		8EB301A02A78625C005E2620 /* LeaderBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3019F2A78625C005E2620 /* LeaderBoardViewController.swift */; };
 		8EB301A52A78625C005E2620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EB301A42A78625C005E2620 /* Assets.xcassets */; };
 		8EB301A82A78625C005E2620 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB301A62A78625C005E2620 /* LaunchScreen.storyboard */; };
 		8EB301B32A78625D005E2620 /* CardioCartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB301B22A78625D005E2620 /* CardioCartTests.swift */; };
@@ -39,10 +43,14 @@
 /* Begin PBXFileReference section */
 		8E7879A32A79B85E00F6F8F0 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		8E7879A52A79B9F200F6F8F0 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		8E7879A82A79BFC600F6F8F0 /* UserProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProviderProtocol.swift; sourceTree = "<group>"; };
+		8E7879AD2A79C06500F6F8F0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8E7879AF2A79C11C00F6F8F0 /* MockUserProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserProvider.swift; sourceTree = "<group>"; };
+		8E7879B12A79C1A300F6F8F0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8EB301982A78625C005E2620 /* CardioCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardioCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB3019B2A78625C005E2620 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EB3019D2A78625C005E2620 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8EB3019F2A78625C005E2620 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8EB3019F2A78625C005E2620 /* LeaderBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardViewController.swift; sourceTree = "<group>"; };
 		8EB301A42A78625C005E2620 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EB301A72A78625C005E2620 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EB301A92A78625C005E2620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,6 +95,23 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
+		8E7879A72A79BFB200F6F8F0 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				8E7879A82A79BFC600F6F8F0 /* UserProviderProtocol.swift */,
+				8E7879AF2A79C11C00F6F8F0 /* MockUserProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		8E7879AC2A79C05D00F6F8F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8E7879AD2A79C06500F6F8F0 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		8EB3018F2A78625C005E2620 = {
 			isa = PBXGroup;
 			children = (
@@ -110,10 +135,13 @@
 		8EB3019A2A78625C005E2620 /* CardioCart */ = {
 			isa = PBXGroup;
 			children = (
+				8E7879AC2A79C05D00F6F8F0 /* Models */,
+				8E7879A72A79BFB200F6F8F0 /* Providers */,
 				8E7879A22A79B85200F6F8F0 /* Coordinators */,
 				8EB3019B2A78625C005E2620 /* AppDelegate.swift */,
 				8EB3019D2A78625C005E2620 /* SceneDelegate.swift */,
-				8EB3019F2A78625C005E2620 /* ViewController.swift */,
+				8EB3019F2A78625C005E2620 /* LeaderBoardViewController.swift */,
+				8E7879B12A79C1A300F6F8F0 /* LoginViewController.swift */,
 				8EB301A42A78625C005E2620 /* Assets.xcassets */,
 				8EB301A62A78625C005E2620 /* LaunchScreen.storyboard */,
 				8EB301A92A78625C005E2620 /* Info.plist */,
@@ -268,11 +296,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EB301A02A78625C005E2620 /* ViewController.swift in Sources */,
+				8E7879B22A79C1A300F6F8F0 /* LoginViewController.swift in Sources */,
+				8EB301A02A78625C005E2620 /* LeaderBoardViewController.swift in Sources */,
 				8E7879A42A79B85E00F6F8F0 /* MainCoordinator.swift in Sources */,
 				8E7879A62A79B9F200F6F8F0 /* CoordinatorProtocol.swift in Sources */,
 				8EB3019C2A78625C005E2620 /* AppDelegate.swift in Sources */,
 				8EB3019E2A78625C005E2620 /* SceneDelegate.swift in Sources */,
+				8E7879B02A79C11C00F6F8F0 /* MockUserProvider.swift in Sources */,
+				8E7879A92A79BFC600F6F8F0 /* UserProviderProtocol.swift in Sources */,
+				8E7879AE2A79C06500F6F8F0 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

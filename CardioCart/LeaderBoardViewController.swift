@@ -1,13 +1,6 @@
-//
-//  ViewController.swift
-//  CardioCart
-//
-//  Created by Bobby Ren on 7/31/23.
-//
-
 import UIKit
 
-class ViewController: UIViewController {
+class LeaderBoardViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

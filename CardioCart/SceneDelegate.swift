@@ -24,7 +24,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.makeKeyAndVisible()
 
         let navigationController = UINavigationController()
-        coordinator = MainCoordinator(navigationController: navigationController)
+        let userProvider = MockUserProvider()
+        coordinator = MainCoordinator(userProvider: userProvider,
+                                      navigationController: navigationController)
         coordinator?.start()
 
         window?.rootViewController = navigationController
