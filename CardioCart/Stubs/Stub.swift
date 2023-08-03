@@ -25,10 +25,11 @@ internal enum Stub: String {
     }
 
     func load<T: Decodable>() throws -> T {
-        guard let url = Bundle(for: AppDelegate.self).url(
-            forResource: filename,
-            withExtension: "json"
-        ) else {
+        let bundle = Bundle(for: AppDelegate.self)
+        guard let url = bundle.url(
+                forResource: filename,
+                withExtension: "json")
+        else {
             throw StubError.stubNotFound(filename)
         }
 

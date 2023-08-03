@@ -21,8 +21,8 @@ internal struct MainCoordinator: Coordinator {
 
     func start() {
         let vc: UIViewController
-        if userProvider.isLoggedIn {
-            vc = LeaderBoardViewController()
+        if let user = userProvider.currentUser {
+            vc = UserStatusViewController(user: user)
         } else {
             vc = LoginViewController()
         }
