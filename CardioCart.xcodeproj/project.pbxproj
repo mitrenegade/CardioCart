@@ -23,6 +23,8 @@
 		8E7879CB2A79D02200F6F8F0 /* UserProgressProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879CA2A79D02200F6F8F0 /* UserProgressProviderProtocol.swift */; };
 		8E7879CD2A79D07A00F6F8F0 /* MockUserProgressProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879CC2A79D07A00F6F8F0 /* MockUserProgressProvider.swift */; };
 		8E7879CF2A7B82CD00F6F8F0 /* userProgress.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E7879CE2A7B82CA00F6F8F0 /* userProgress.json */; };
+		8E7879D22A7B837800F6F8F0 /* RaceTrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879D12A7B837800F6F8F0 /* RaceTrackViewController.swift */; };
+		8E7879D42A7B838600F6F8F0 /* RaceTrackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879D32A7B838600F6F8F0 /* RaceTrackViewModel.swift */; };
 		8EB3019C2A78625C005E2620 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3019B2A78625C005E2620 /* AppDelegate.swift */; };
 		8EB3019E2A78625C005E2620 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3019D2A78625C005E2620 /* SceneDelegate.swift */; };
 		8EB301A02A78625C005E2620 /* LeaderBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3019F2A78625C005E2620 /* LeaderBoardViewController.swift */; };
@@ -67,6 +69,8 @@
 		8E7879CA2A79D02200F6F8F0 /* UserProgressProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProgressProviderProtocol.swift; sourceTree = "<group>"; };
 		8E7879CC2A79D07A00F6F8F0 /* MockUserProgressProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserProgressProvider.swift; sourceTree = "<group>"; };
 		8E7879CE2A7B82CA00F6F8F0 /* userProgress.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userProgress.json; sourceTree = "<group>"; };
+		8E7879D12A7B837800F6F8F0 /* RaceTrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTrackViewController.swift; sourceTree = "<group>"; };
+		8E7879D32A7B838600F6F8F0 /* RaceTrackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTrackViewModel.swift; sourceTree = "<group>"; };
 		8EB301982A78625C005E2620 /* CardioCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardioCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB3019B2A78625C005E2620 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EB3019D2A78625C005E2620 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -171,6 +175,15 @@
 			path = UserStatus;
 			sourceTree = "<group>";
 		};
+		8E7879D02A7B834A00F6F8F0 /* RaceTrack */ = {
+			isa = PBXGroup;
+			children = (
+				8E7879D12A7B837800F6F8F0 /* RaceTrackViewController.swift */,
+				8E7879D32A7B838600F6F8F0 /* RaceTrackViewModel.swift */,
+			);
+			path = RaceTrack;
+			sourceTree = "<group>";
+		};
 		8EB3018F2A78625C005E2620 = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +215,7 @@
 				8E7879C52A79CF6700F6F8F0 /* UserStatus */,
 				8E7879C12A79CDE400F6F8F0 /* LeaderBoard */,
 				8EB3019B2A78625C005E2620 /* AppDelegate.swift */,
+				8E7879D02A7B834A00F6F8F0 /* RaceTrack */,
 				8EB3019D2A78625C005E2620 /* SceneDelegate.swift */,
 				8E7879B12A79C1A300F6F8F0 /* LoginViewController.swift */,
 				8EB301A42A78625C005E2620 /* Assets.xcassets */,
@@ -369,12 +383,14 @@
 				8E7879A62A79B9F200F6F8F0 /* CoordinatorProtocol.swift in Sources */,
 				8E7879C72A79CF6700F6F8F0 /* UserStatusViewController.swift in Sources */,
 				8EB3019C2A78625C005E2620 /* AppDelegate.swift in Sources */,
+				8E7879D42A7B838600F6F8F0 /* RaceTrackViewModel.swift in Sources */,
 				8EB3019E2A78625C005E2620 /* SceneDelegate.swift in Sources */,
 				8E7879B62A79C62B00F6F8F0 /* Progress.swift in Sources */,
 				8E7879BA2A79C7A800F6F8F0 /* Stub.swift in Sources */,
 				8E7879CD2A79D07A00F6F8F0 /* MockUserProgressProvider.swift in Sources */,
 				8E7879B02A79C11C00F6F8F0 /* MockUserProvider.swift in Sources */,
 				8E7879A92A79BFC600F6F8F0 /* UserProviderProtocol.swift in Sources */,
+				8E7879D22A7B837800F6F8F0 /* RaceTrackViewController.swift in Sources */,
 				8E7879AE2A79C06500F6F8F0 /* User.swift in Sources */,
 				8E7879B42A79C5F100F6F8F0 /* UserProgress.swift in Sources */,
 			);
