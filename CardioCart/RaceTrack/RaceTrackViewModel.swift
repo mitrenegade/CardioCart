@@ -6,7 +6,22 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 internal struct RaceTrackViewModel {
-    let progress: UserProgress
+
+    // MARK: - Properties
+
+    private let progressRelay = PublishRelay<UserProgress>()
+
+    lazy var progressObservable: Observable<UserProgress> = {
+        progressRelay.asObservable()
+    }()
+
+    // MARK: -
+
+    init(progress: UserProgress) {
+        progressRelay.accept(progress)
+    }
 }
