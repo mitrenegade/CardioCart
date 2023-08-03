@@ -6,12 +6,17 @@
 //
 
 import UIKit
+import SnapKit
+import RxSwift
+import RxCocoa
 
 internal final class UserStatusViewController: UIViewController {
 
     // MARK: - Properties
 
     private let viewModel: UserStatusViewModel
+
+    private let disposeBag = DisposeBag()
 
     // MARK: - Subviews
 
@@ -22,10 +27,15 @@ internal final class UserStatusViewController: UIViewController {
         return label
     }()
 
+    private let button: UIButton = {
+        let button = UIButton(frame: .zero)
+        return button
+    }()
+
     // MARK: - View Lifecycle
 
-    init(user: User) {
-        viewModel = UserStatusViewModel(user: user)
+    init(viewModel: UserStatusViewModel) {
+        self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -37,6 +47,8 @@ internal final class UserStatusViewController: UIViewController {
         super.viewDidLoad()
 
         setupViews()
+        setupConstraints()
+        setupBindings()
     }
 
     // MARK: - Private
@@ -47,5 +59,29 @@ internal final class UserStatusViewController: UIViewController {
 
         label.frame = view.frame
         label.text = "\(viewModel.userName): \(viewModel.steps)"
+
+        view.addSubview(button)
+        button.backgroundColor = .brown
+        button.setTitle("Leader Board", for: .normal)
+    }
+
+    private func setupConstraints() {
+        label.snp.makeConstraints {
+            $0.leading.trailing.equalToSuperview()
+            $0.height.equalTo(30)
+            $0.centerX.centerY.equalToSuperview()
+        }
+        button.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.width.equalTo(120)
+            $0.top.equalTo(label.snp.bottom).offset(8)
+            $0.height.equalTo(24)
+        }
+    }
+
+    private func setupBindings() {
+        button.rx.tap.bind { [weak self] _ in
+            self?.viewModel.viewLeaderBoard()
+        }.disposed(by: disposeBag)
     }
 }

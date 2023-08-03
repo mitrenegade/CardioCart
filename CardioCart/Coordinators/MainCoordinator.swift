@@ -8,11 +8,17 @@
 import Foundation
 import UIKit
 
-internal struct MainCoordinator: Coordinator {
+internal final class MainCoordinator: Coordinator {
+
+    // MARK: - Properties
 
     let navigationController: UINavigationController
 
     private let userProvider: UserProvider
+
+    private var childCoordinators = [Coordinator]()
+
+    // MARK: - Init
 
     init(userProvider: UserProvider, navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -20,14 +26,22 @@ internal struct MainCoordinator: Coordinator {
     }
 
     func start() {
-        let vc: UIViewController
+        let viewController: UIViewController
         if let user = userProvider.currentUser {
-            vc = UserStatusViewController(user: user)
+            let viewModel = UserStatusViewModel(user: user, coordinator: self)
+            viewController = UserStatusViewController(viewModel: viewModel)
         } else {
-            vc = LoginViewController()
+            viewController = LoginViewController()
         }
 
-        navigationController.pushViewController(vc, animated: false)
+        navigationController.pushViewController(viewController, animated: false)
     }
 
+    // MARK: - Public functions
+
+    func showLeaderBoard() {
+        let coordinator = LeaderBoardCoordinator(navigationController: navigationController)
+        childCoordinators.append(coordinator)
+        coordinator.start()
+    }
 }

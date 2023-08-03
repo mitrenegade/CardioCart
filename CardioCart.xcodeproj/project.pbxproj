@@ -25,6 +25,7 @@
 		8E7879CF2A7B82CD00F6F8F0 /* userProgress.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E7879CE2A7B82CA00F6F8F0 /* userProgress.json */; };
 		8E7879D22A7B837800F6F8F0 /* RaceTrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879D12A7B837800F6F8F0 /* RaceTrackViewController.swift */; };
 		8E7879D42A7B838600F6F8F0 /* RaceTrackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879D32A7B838600F6F8F0 /* RaceTrackViewModel.swift */; };
+		8E7879D62A7C501C00F6F8F0 /* LeaderBoardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879D52A7C501C00F6F8F0 /* LeaderBoardCoordinator.swift */; };
 		8EB3019C2A78625C005E2620 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3019B2A78625C005E2620 /* AppDelegate.swift */; };
 		8EB3019E2A78625C005E2620 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3019D2A78625C005E2620 /* SceneDelegate.swift */; };
 		8EB301A02A78625C005E2620 /* LeaderBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3019F2A78625C005E2620 /* LeaderBoardViewController.swift */; };
@@ -75,6 +76,7 @@
 		8E7879CE2A7B82CA00F6F8F0 /* userProgress.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userProgress.json; sourceTree = "<group>"; };
 		8E7879D12A7B837800F6F8F0 /* RaceTrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTrackViewController.swift; sourceTree = "<group>"; };
 		8E7879D32A7B838600F6F8F0 /* RaceTrackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTrackViewModel.swift; sourceTree = "<group>"; };
+		8E7879D52A7C501C00F6F8F0 /* LeaderBoardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardCoordinator.swift; sourceTree = "<group>"; };
 		8EB301982A78625C005E2620 /* CardioCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardioCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB3019B2A78625C005E2620 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EB3019D2A78625C005E2620 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 		8E7879C12A79CDE400F6F8F0 /* LeaderBoard */ = {
 			isa = PBXGroup;
 			children = (
+				8E7879D52A7C501C00F6F8F0 /* LeaderBoardCoordinator.swift */,
 				8EB3019F2A78625C005E2620 /* LeaderBoardViewController.swift */,
 				8E7879BF2A79CDC900F6F8F0 /* LeaderBoardViewModel.swift */,
 			);
@@ -263,7 +266,6 @@
 				1BC52C010F495E55E92A529D /* Pods-CardioCart.debug.xcconfig */,
 				609D1185FC31426C07E03998 /* Pods-CardioCart.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -451,6 +453,7 @@
 				8E7879A42A79B85E00F6F8F0 /* MainCoordinator.swift in Sources */,
 				8E7879A62A79B9F200F6F8F0 /* CoordinatorProtocol.swift in Sources */,
 				8E7879C72A79CF6700F6F8F0 /* UserStatusViewController.swift in Sources */,
+				8E7879D62A7C501C00F6F8F0 /* LeaderBoardCoordinator.swift in Sources */,
 				8EB3019C2A78625C005E2620 /* AppDelegate.swift in Sources */,
 				8E7879D42A7B838600F6F8F0 /* RaceTrackViewModel.swift in Sources */,
 				8EB3019E2A78625C005E2620 /* SceneDelegate.swift in Sources */,

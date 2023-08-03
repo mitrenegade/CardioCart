@@ -19,8 +19,8 @@ class RaceTrackViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    init(userProgress: UserProgress) {
-        viewModel = RaceTrackViewModel(progress: userProgress)
+    init(viewModel: RaceTrackViewModel) {
+        self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
 
