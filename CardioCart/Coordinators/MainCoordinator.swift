@@ -14,13 +14,13 @@ internal final class MainCoordinator: Coordinator {
 
     let navigationController: UINavigationController
 
-    private let userProvider: UserProvider
+    private let userProvider: UserProviderProtocol
 
     private var childCoordinators = [Coordinator]()
 
     // MARK: - Init
 
-    init(userProvider: UserProvider, navigationController: UINavigationController) {
+    init(userProvider: UserProviderProtocol, navigationController: UINavigationController) {
         self.navigationController = navigationController
         self.userProvider = userProvider
     }

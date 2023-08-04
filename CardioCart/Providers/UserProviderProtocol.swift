@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol UserProvider {
+protocol UserProviderProtocol {
     var isLoggedIn: Bool { get }
     var currentUser: User? { get }
 }

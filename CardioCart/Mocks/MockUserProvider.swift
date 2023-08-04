@@ -7,7 +7,7 @@
 
 import Foundation
 
-internal final class MockUserProvider: UserProvider {
+internal final class MockUserProvider: UserProviderProtocol {
 
     private lazy var testUser: User? = {
         do {
