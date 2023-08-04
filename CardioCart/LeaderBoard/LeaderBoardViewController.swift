@@ -26,8 +26,19 @@ internal final class LeaderBoardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .yellow
+        setupViews()
+    }
+
+    // MARK: - Private Functions
+    private func setupViews() {
+        tableView.backgroundColor = .yellow
         tableView.dataSource = self
+
+        view.addSubview(tableView)
+
+        tableView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
     }
 
 }
@@ -40,7 +51,15 @@ extension LeaderBoardViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: LeaderBoardViewController.CellReuseIdentifier, for: indexPath) 
 
-        cell.textLabel?.text = try? viewModel.title(at: indexPath.row)
+        do {
+            let place = try viewModel.place(at: indexPath.row)
+            let title = try viewModel.title(at: indexPath.row)
+            let steps = try viewModel.steps(at: indexPath.row)
+            cell.textLabel?.text = "\(place) - \(title): \(steps)"
+        } catch let error {
+            print("LeaderBoard cell error \(error) at row \(indexPath)")
+            cell.textLabel?.text = nil
+        }
         return cell
     }
 
