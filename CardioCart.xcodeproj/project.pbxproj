@@ -12,7 +12,6 @@
 		8E7879A92A79BFC600F6F8F0 /* UserProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879A82A79BFC600F6F8F0 /* UserProviderProtocol.swift */; };
 		8E7879AE2A79C06500F6F8F0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879AD2A79C06500F6F8F0 /* User.swift */; };
 		8E7879B02A79C11C00F6F8F0 /* MockUserProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879AF2A79C11C00F6F8F0 /* MockUserProvider.swift */; };
-		8E7879B22A79C1A300F6F8F0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879B12A79C1A300F6F8F0 /* LoginViewController.swift */; };
 		8E7879B42A79C5F100F6F8F0 /* UserProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879B32A79C5F100F6F8F0 /* UserProgress.swift */; };
 		8E7879B62A79C62B00F6F8F0 /* Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879B52A79C62B00F6F8F0 /* Progress.swift */; };
 		8E7879BA2A79C7A800F6F8F0 /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879B92A79C7A800F6F8F0 /* Stub.swift */; };
@@ -26,6 +25,9 @@
 		8E7879D22A7B837800F6F8F0 /* RaceTrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879D12A7B837800F6F8F0 /* RaceTrackViewController.swift */; };
 		8E7879D42A7B838600F6F8F0 /* RaceTrackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879D32A7B838600F6F8F0 /* RaceTrackViewModel.swift */; };
 		8E7879D62A7C501C00F6F8F0 /* LeaderBoardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879D52A7C501C00F6F8F0 /* LeaderBoardCoordinator.swift */; };
+		8E7879DB2A7DD79200F6F8F0 /* LoginSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879DA2A7DD79200F6F8F0 /* LoginSignupViewController.swift */; };
+		8E7879DD2A7DD7A200F6F8F0 /* LoginSignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879DC2A7DD7A200F6F8F0 /* LoginSignupViewModel.swift */; };
+		8E7879DF2A7DD7AA00F6F8F0 /* LoginSignupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7879DE2A7DD7AA00F6F8F0 /* LoginSignupCoordinator.swift */; };
 		8EB3019C2A78625C005E2620 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3019B2A78625C005E2620 /* AppDelegate.swift */; };
 		8EB3019E2A78625C005E2620 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3019D2A78625C005E2620 /* SceneDelegate.swift */; };
 		8EB301A02A78625C005E2620 /* LeaderBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3019F2A78625C005E2620 /* LeaderBoardViewController.swift */; };
@@ -63,7 +65,6 @@
 		8E7879A82A79BFC600F6F8F0 /* UserProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProviderProtocol.swift; sourceTree = "<group>"; };
 		8E7879AD2A79C06500F6F8F0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8E7879AF2A79C11C00F6F8F0 /* MockUserProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserProvider.swift; sourceTree = "<group>"; };
-		8E7879B12A79C1A300F6F8F0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8E7879B32A79C5F100F6F8F0 /* UserProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProgress.swift; sourceTree = "<group>"; };
 		8E7879B52A79C62B00F6F8F0 /* Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress.swift; sourceTree = "<group>"; };
 		8E7879B92A79C7A800F6F8F0 /* Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stub.swift; sourceTree = "<group>"; };
@@ -77,6 +78,9 @@
 		8E7879D12A7B837800F6F8F0 /* RaceTrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTrackViewController.swift; sourceTree = "<group>"; };
 		8E7879D32A7B838600F6F8F0 /* RaceTrackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTrackViewModel.swift; sourceTree = "<group>"; };
 		8E7879D52A7C501C00F6F8F0 /* LeaderBoardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardCoordinator.swift; sourceTree = "<group>"; };
+		8E7879DA2A7DD79200F6F8F0 /* LoginSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupViewController.swift; sourceTree = "<group>"; };
+		8E7879DC2A7DD7A200F6F8F0 /* LoginSignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupViewModel.swift; sourceTree = "<group>"; };
+		8E7879DE2A7DD7AA00F6F8F0 /* LoginSignupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupCoordinator.swift; sourceTree = "<group>"; };
 		8EB301982A78625C005E2620 /* CardioCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardioCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB3019B2A78625C005E2620 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EB3019D2A78625C005E2620 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +134,8 @@
 			children = (
 				8E7879A52A79B9F200F6F8F0 /* CoordinatorProtocol.swift */,
 				8E7879A32A79B85E00F6F8F0 /* MainCoordinator.swift */,
+				8E7879DE2A7DD7AA00F6F8F0 /* LoginSignupCoordinator.swift */,
+				8E7879D52A7C501C00F6F8F0 /* LeaderBoardCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -175,7 +181,6 @@
 		8E7879C12A79CDE400F6F8F0 /* LeaderBoard */ = {
 			isa = PBXGroup;
 			children = (
-				8E7879D52A7C501C00F6F8F0 /* LeaderBoardCoordinator.swift */,
 				8EB3019F2A78625C005E2620 /* LeaderBoardViewController.swift */,
 				8E7879BF2A79CDC900F6F8F0 /* LeaderBoardViewModel.swift */,
 			);
@@ -198,6 +203,15 @@
 				8E7879D32A7B838600F6F8F0 /* RaceTrackViewModel.swift */,
 			);
 			path = RaceTrack;
+			sourceTree = "<group>";
+		};
+		8E7879D92A7DD76C00F6F8F0 /* LoginSignup */ = {
+			isa = PBXGroup;
+			children = (
+				8E7879DA2A7DD79200F6F8F0 /* LoginSignupViewController.swift */,
+				8E7879DC2A7DD7A200F6F8F0 /* LoginSignupViewModel.swift */,
+			);
+			path = LoginSignup;
 			sourceTree = "<group>";
 		};
 		8EB3018F2A78625C005E2620 = {
@@ -225,6 +239,7 @@
 		8EB3019A2A78625C005E2620 /* CardioCart */ = {
 			isa = PBXGroup;
 			children = (
+				8E7879D92A7DD76C00F6F8F0 /* LoginSignup */,
 				8E7879B82A79C79E00F6F8F0 /* Stubs */,
 				8E7879B72A79C6EB00F6F8F0 /* Mocks */,
 				8E7879AC2A79C05D00F6F8F0 /* Models */,
@@ -235,7 +250,6 @@
 				8EB3019B2A78625C005E2620 /* AppDelegate.swift */,
 				8E7879D02A7B834A00F6F8F0 /* RaceTrack */,
 				8EB3019D2A78625C005E2620 /* SceneDelegate.swift */,
-				8E7879B12A79C1A300F6F8F0 /* LoginViewController.swift */,
 				8EB301A42A78625C005E2620 /* Assets.xcassets */,
 				8EB301A62A78625C005E2620 /* LaunchScreen.storyboard */,
 				8EB301A92A78625C005E2620 /* Info.plist */,
@@ -447,7 +461,6 @@
 			files = (
 				8E7879C02A79CDC900F6F8F0 /* LeaderBoardViewModel.swift in Sources */,
 				8E7879CB2A79D02200F6F8F0 /* UserProgressProviderProtocol.swift in Sources */,
-				8E7879B22A79C1A300F6F8F0 /* LoginViewController.swift in Sources */,
 				8EB301A02A78625C005E2620 /* LeaderBoardViewController.swift in Sources */,
 				8E7879C92A79CFCA00F6F8F0 /* UserStatusViewModel.swift in Sources */,
 				8E7879A42A79B85E00F6F8F0 /* MainCoordinator.swift in Sources */,
@@ -455,12 +468,15 @@
 				8E7879C72A79CF6700F6F8F0 /* UserStatusViewController.swift in Sources */,
 				8E7879D62A7C501C00F6F8F0 /* LeaderBoardCoordinator.swift in Sources */,
 				8EB3019C2A78625C005E2620 /* AppDelegate.swift in Sources */,
+				8E7879DF2A7DD7AA00F6F8F0 /* LoginSignupCoordinator.swift in Sources */,
 				8E7879D42A7B838600F6F8F0 /* RaceTrackViewModel.swift in Sources */,
 				8EB3019E2A78625C005E2620 /* SceneDelegate.swift in Sources */,
+				8E7879DD2A7DD7A200F6F8F0 /* LoginSignupViewModel.swift in Sources */,
 				8E7879B62A79C62B00F6F8F0 /* Progress.swift in Sources */,
 				8E7879BA2A79C7A800F6F8F0 /* Stub.swift in Sources */,
 				8E7879CD2A79D07A00F6F8F0 /* MockUserProgressProvider.swift in Sources */,
 				8E7879B02A79C11C00F6F8F0 /* MockUserProvider.swift in Sources */,
+				8E7879DB2A7DD79200F6F8F0 /* LoginSignupViewController.swift in Sources */,
 				8E7879A92A79BFC600F6F8F0 /* UserProviderProtocol.swift in Sources */,
 				8E7879D22A7B837800F6F8F0 /* RaceTrackViewController.swift in Sources */,
 				8E7879AE2A79C06500F6F8F0 /* User.swift in Sources */,

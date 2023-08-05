@@ -26,21 +26,30 @@ internal final class MainCoordinator: Coordinator {
     }
 
     func start() {
-        let viewController: UIViewController
         if let user = userProvider.currentUser {
-            let viewModel = UserStatusViewModel(user: user, coordinator: self)
-            viewController = UserStatusViewController(viewModel: viewModel)
+            showHomeView(user: user)
         } else {
-            viewController = LoginViewController()
+            showLoginSignup()
         }
-
-        navigationController.pushViewController(viewController, animated: false)
     }
 
     // MARK: - Public functions
 
+    func showHomeView(user: User) {
+        let viewController: UIViewController
+        let viewModel = UserStatusViewModel(user: user, coordinator: self)
+        viewController = UserStatusViewController(viewModel: viewModel)
+        navigationController.pushViewController(viewController, animated: false)
+    }
+
     func showLeaderBoard() {
         let coordinator = LeaderBoardCoordinator(navigationController: navigationController)
+        childCoordinators.append(coordinator)
+        coordinator.start()
+    }
+
+    func showLoginSignup() {
+        let coordinator = LoginSignupCoordinator(navigationController: navigationController)
         childCoordinators.append(coordinator)
         coordinator.start()
     }

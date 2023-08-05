@@ -25,6 +25,6 @@ internal final class MockUserProvider: UserProviderProtocol {
     var isLoggedIn: Bool { currentUser != nil }
 
     var currentUser: User? {
-        testUser
+        nil
     }
 }
